@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browsing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: black;
+        }
+        .page {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 100vh;
+        }
+        nav {
+            height: 68px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 60px;
+        }
+        .nav1 {
+            display: flex;
+            gap: 45px;
+            align-items: center;
+        }
+        .nav1 img {
+            height: 25px;
+            width: auto;
+        }
+        .nav1 ul {
+            display: flex;
+            gap: 20px;
+        }
+        .nav1 ul li {
+            list-style: none;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .nav1 ul li:hover {
+            color: red;
+        }
+        .nav2 {
+            display: flex;
+            gap: 15px;
+        }
+        .nav2 img {
+            height: 24px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .nav2 img:hover {
+            transform: scale(1.1);
+        }
+        .box {
+            color: white;
+            width: 100%;
+            height: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 60px;
+        }
+        .box2 {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .box2 p {
+            font-size: 15px;
+        }
+        .box2 select {
+            height: 38px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            padding: 5px 10px;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+        .box2 select:hover {
+            border-color: red;
+            background-color: #111;
+        }
+        .frame {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 0 60px;
+        }
+        .movies {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        .movies::-webkit-scrollbar {
+            height: 8px;
+        }
+        .movies::-webkit-scrollbar-thumb {
+            background-color: #444;
+            border-radius: 4px;
+        }
+        .movies img {
+            width: 218px;
+            height: 123px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .movies img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <nav>
+                <div class="nav1">
+                    <img src="images/Logo.png" alt="Logo">
+                    <ul>
+                        <li>Home</li>
+                        <li>TV Shows</li>
+                        <li>Movies</li>
+                        <li>New & Popular</li>
+                        <li>My List</li>
+                        <li>Browse by Languages</li>
+                    </ul>
+                </div>
+                <div class="nav2">
+                    <img src="images/Search.png" alt="Search">
+                    <img src="images/Notification.png" alt="Notification">
+                    <img src="images/SmallAvatar.png" alt="Avatar">
+                </div>
+            </nav>
+            <div class="box">
+                <h2>Browse by Languages</h2>
+                <div class="box2">
+                    <p>Select your preferences</p>
+                    <select id="Language">
+                        <option value="original">Original</option>
+                        <option value="dubbed">Dubbed</option>
+                    </select>
+                    <select id="dubb">
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="tamil">Tamil</option>
+                    </select>
+                    <p>Sort by</p>
+                    <select id="suggest">
+                        <option value="suggestions">Suggestions for you</option>
+                        <option value="bollywood">Bollywood</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="tamil">Tamil</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="frame">
+                <div class="movies">
+                    <img src="images/attorney.png" alt="Poster">
+                    <img src="images/poster.png" alt="Poster">
+                    <img src="images/poster1.png" alt="Poster">
+                    <img src="images/poster2.png" alt="Poster">
+                    <img src="images/poster3.png" alt="Poster">
+                    <img src="images/poster4.png" alt="Poster">
+                    <img src="images/poster4.png" alt="Poster">
+                </div>
+                <div class="movies">
+                    <img src="images/poster7.png" alt="Poster">
+                    <img src="images/poster8.png" alt="Poster">
+                    <img src="images/poster9.png" alt="Poster">
+                    <img src="images/poster12.png" alt="Poster">
+                    <img src="images/poster10.png" alt="Poster">
+                    <img src="images/poster11.png" alt="Poster">
+                </div>
+                <div class="movies">
+                    <img src="images/attorney.png" alt="Poster">
+                    <img src="images/poster.png" alt="Poster">
+                    <img src="images/poster1.png" alt="Poster">
+                    <img src="images/poster2.png" alt="Poster">
+                    <img src="images/poster3.png" alt="Poster">
+                    <img src="images/poster4.png" alt="Poster">
+                </div>
+                <div class="movies">
+                    <img src="images/poster7.png" alt="Poster">
+                    <img src="images/poster8.png" alt="Poster">
+                    <img src="images/poster9.png" alt="Poster">
+                    <img src="images/poster12.png" alt="Poster">
+                    <img src="images/poster10.png" alt="Poster">
+                    <img src="images/poster11.png" alt="Poster">
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

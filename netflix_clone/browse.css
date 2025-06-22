@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 130vh;
+  width: 100%;
+  background-color: black;
+}
+nav {
+  height: 68px;
+  width: 100%;
+  display: flex;
+  gap: 500px;
+  align-items: center;
+}
+.nav1 {
+  display: flex;
+  gap: 45px;
+  margin-left: 50px;
+  height: 25px;
+  width: 675px;
+}
+.nav1 img {
+  height: 25px;
+  width: 93px;
+}
+.nav1 ul {
+  display: flex;
+  height: 17px;
+  width: 537px;
+  gap: 20px;
+}
+.nav1 ul li {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
+  color: white;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.nav1 ul li:hover {
+  color: red;
+}
+.nav2 {
+  display: flex;
+  gap: 15px;
+  height: 32px;
+  width: 154px;
+}
+.nav2 img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.nav2 img:hover {
+  transform: scale(1.1);
+}
+.box {
+  color: white;
+  width: 100%;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 85px;
+  justify-content: space-around;
+}
+.box2 {
+  height: 38px;
+  width: 915px;
+  display: flex;
+  gap: 10px;
+}
+.box2 p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  padding: 10px 11px;
+}
+.box2 select {
+  height: 38px;
+  background-color: black;
+  border: 1px solid white;
+  padding: 10px 11px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+.box2 select:hover {
+  border-color: red;
+  background-color: #111;
+}
+#Language {
+  width: 184px;
+}
+#dubb,
+#suggest {
+  width: 246px;
+}
+.frame {
+  margin-top: 60px;
+  width: 100%;
+  height: 691px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+.movies {
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  gap: 6px;
+  height: 124px;
+  width: calc(100% - 120px);
+}
+.movies img {
+  width: 218px;
+  height: 123px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+.movies img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}

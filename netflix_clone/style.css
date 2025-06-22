@@ -1,0 +1,294 @@
+body {
+  background-color: black;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body a:hover {
+  cursor: pointer;
+  text-decoration-color: white;
+}
+@media only screen and (max-width: 600px) {
+  .questions li {
+    width: 50%;
+    height: 70%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-image: url("images/landing-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  overflow-x: hidden;
+  align-items: center;
+}
+
+.aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 144px;
+  width: 1292px;
+  height: 144px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  width: 1200px;
+  height: 92px;
+  padding: 24px 48px 28px 48px;
+}
+#logo {
+  width: 148px;
+  height: 40px;
+}
+#lang {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 800px;
+  margin-right: 24px;
+  padding: 6px 8px 6px 16px;
+  width: 131px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid grey;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#lang option {
+  color: white;
+  background-color: black;
+}
+#sign_in {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 77px;
+  height: 32px;
+}
+#sign_in:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s linear;
+  cursor: pointer;
+  background-color: white;
+  color: red;
+}
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: 558px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1104px;
+  height: 410px;
+}
+.content .c1 {
+  color: white;
+  width: 552px;
+  height: 138px;
+}
+.content .c1 h2 {
+  font-weight: 900;
+  font-size: 48px;
+}
+.content .c1 p {
+  font-weight: 400;
+  font-size: 24px;
+}
+.content .c2 {
+  height: inherit;
+  width: 552px;
+  object-fit: contain;
+}
+.content .screen {
+  position: relative;
+  bottom: 330px;
+  right: -71px;
+  z-index: 1;
+}
+.bigBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 924px;
+}
+.faq {
+  margin: 72px 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 1104px;
+  height: 780px;
+}
+.faq h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 48px;
+}
+.head {
+  width: 1104px;
+  height: 62px;
+  margin-bottom: 24px;
+}
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1104px;
+  height: 544px;
+  overflow: hidden;
+}
+.questions li {
+  display: flex;
+  justify-content: space-between; /* push text and button to edges */
+  align-items: center;
+  padding: 0 24px; /* space on left and right */
+  background-color: rgb(97, 97, 97);
+  width: 1080px;
+  height: 84px;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 8px;
+  list-style: none;
+}
+
+.questions li button {
+  margin-right: 15px;
+  background-color: transparent;
+  border: none;
+}
+.questions li button:hover {
+  filter: invert(100%);
+  transform: scale(1.1) rotate(45deg);
+  transition: transform 0.3s linear;
+  cursor: pointer;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  align-self: center;
+  width: 646px;
+  height: 102px;
+}
+.email {
+  align-self: center;
+  margin-top: 19px;
+}
+.email input {
+  font-size: 20px;
+  padding-left: 9px;
+  margin-right: 10px;
+  background-color: black;
+  color: rgb(97, 97, 97);
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 4px;
+  width: 368px;
+  height: 56px;
+}
+.email button {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: bolder;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 208px;
+  height: 56px;
+}
+.email button:hover {
+  background-color: white;
+  color: red;
+  transform: scale(1.005);
+  transition: transform 0.3s linear;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: rgb(97, 97, 97);
+  width: 100%;
+  height: 424px;
+}
+.foot {
+  display: flex;
+  width: 1104px;
+  height: 280px;
+}
+.Childfoot {
+  width: 276px;
+  height: inherit;
+}
+.Childfoot ul a {
+  text-decoration: none;
+  text-decoration-color: rgb(97, 97, 97);
+}
+.foot :first-child ul {
+  position: relative;
+  top: 8px;
+}
+.foot :not(:first-child) ul {
+  position: relative;
+  top: 50px;
+}
+.Childfoot ul a li {
+  padding: 9px 0px;
+  list-style: none;
+  color: rgb(97, 97, 97);
+}
+.Childfoot ul a li:hover {
+  color: white;
+  cursor: pointer;
+}
+.mini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 885px;
+  height: 234px;
+}
+.mini1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  color: white;
+  width: inherit;
+  height: 108px;
+}
+.mini2 {
+  margin-top: 24px;
+  width: 646px;
+  height: 102px;
+}

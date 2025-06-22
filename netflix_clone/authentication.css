@@ -1,0 +1,187 @@
+* {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 1209px;
+      width: 100%;
+      background-image: url("images/Hero\ Image.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: black;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: center; */
+      align-items: center;
+      width: 1200px;
+      height: 92px;
+      padding: 24px 48px 28px 48px;
+    }
+    #logo {
+      width: 148px;
+      height: 40px;
+    }
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      width: 450px;
+      height: 708px;
+    }
+    .childbox {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center;
+            align-items: center */
+      width: 314px;
+      height: 504px;
+    }
+    .c1 {
+      /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+      width: 314px;
+      height: 380px;
+    }
+    .c1 h2 {
+      color: white;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: 900;
+      font-size: 32px;
+    }
+    .c1 input {
+      color: rgb(97, 97, 97);
+      width: 272px;
+      height: 56px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgb(97, 97, 97);
+      border-radius: 4px;
+      font-size: 24px;
+      padding: 8px 24px 8px 16px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    .c1 #Email {
+      margin-top: 28px;
+      margin-bottom: 16px;
+    }
+    #sign_in,
+    #alt_sign_in {
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 24px;
+      width: inherit;
+      font-size: 16px;
+      height: 40px;
+      margin-top: 16px;
+    }
+    #sign_in:hover,
+    #alt_sign_in:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s linear;
+      cursor: pointer;
+      background-color: white;
+      color: red;
+    }
+    #alt_sign_in {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    #alt_sign_in:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: rgba(255, 255, 255);
+    }
+    .or {
+      margin-top: 16px;
+      color: rgba(255, 255, 255, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .forget {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: inherit;
+      height: 20px;
+      color: white;
+      margin-top: 16px;
+    }
+    .c2 {
+      margin-top: 20px;
+      width: inherit;
+      height: 104px;
+      color: gray;
+    }
+    .c2 input,
+    .c2 label {
+      margin-top: 10px;
+    }
+    .c2 label,
+    .c2 span {
+      color: white;
+    }
+    .c2 label,
+    .c2 input,
+    .c2 p {
+      margin-bottom: 16px;
+    }
+    a {
+      text-decoration: none;
+      color:#0071EB;
+    }
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: rgb(97, 97, 97);
+      width: 100%;
+      height: 324px;
+      margin-top: 100px;
+    }
+    .foot {
+      display: flex;
+      width: 1104px;
+      height: 280px;
+    }
+    .Childfoot {
+      width: 276px;
+      height: inherit;
+    }
+    .Childfoot ul a {
+      text-decoration: none;
+      text-decoration-color: rgb(97, 97, 97);
+    }
+    .foot :first-child ul {
+      position: relative;
+      top: 8px;
+    }
+    .foot :not(:first-child) ul {
+      position: relative;
+      top: 50px;
+    }
+    .Childfoot ul a li {
+      padding: 9px 0px;
+      list-style: none;
+      color: rgb(97, 97, 97);
+    }
+    .Childfoot ul a li:hover {
+      color: white;
+      cursor: pointer;
+    }
+    .c1 a {
+        width: inherit;
+    }

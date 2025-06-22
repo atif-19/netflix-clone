@@ -1,0 +1,71 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+.mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 732px;
+    background-color: black;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:836px;
+    height:396px;
+}
+.box h1{
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 34px;
+}
+.profiles{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    height: 189px;
+    color: rgb(97, 97, 97);
+}
+.card{
+    width: 144px;
+    height: 189px;
+}
+.card:hover{
+    filter:opacity(0.5); ;
+    transition:transform 0.3s linear;
+    transform: scale(1.1) ;
+    cursor: pointer;
+}
+.card p{
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.manage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 178px;
+    height: 42px;
+    position: relative;
+    top: 80px
+}
+.manage button{
+    background-color:black;
+    color:rgb(97, 97, 97);
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    width: inherit;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+button:hover{
+    color: white;
+}
